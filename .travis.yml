@@ -1,4 +1,8 @@
 language: android
+install:
+  - echo y | sdkmanager "ndk-bundle"
+  - echo y | sdkmanager "cmake;3.6.4111459"
+  - echo y | sdkmanager "lldb;3.1"
 android:
   components:
     # Uncomment the lines below if you want to
